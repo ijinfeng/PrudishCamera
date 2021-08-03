@@ -8,7 +8,7 @@ if MESSAGE.nil?
 end
 
 system('git status -s')
-puts "----> Start upload to github\n"
+puts "----> Start upload to github \n"
 system('git add .')
 system("git commit -m '${MESSAGE}'")
 system("git pull --rebase && git push origin main")
