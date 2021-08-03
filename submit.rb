@@ -1,14 +1,14 @@
 
 #! /usr/bin/ruby
 
-MESSAGE = ARGV.first
+message = ARGV.first
 
-if MESSAGE.nil?
-    MESSAGE = "update"
+if message.nil?
+    message = "update"
 end
 
 system('git status -s')
-puts "----> Start upload to github \n"
+puts "----> Start upload to github"
 system('git add .')
-system("git commit -m '${MESSAGE}'")
+system("git commit -m \"#{message}\"")
 system("git pull --rebase && git push origin main")
