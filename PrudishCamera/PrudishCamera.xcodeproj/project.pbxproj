@@ -14,6 +14,7 @@
 		3769F16026B98F430006EAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3769F15E26B98F430006EAAC /* LaunchScreen.storyboard */; };
 		3769F16826B990260006EAAC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769F16726B990260006EAAC /* MainViewController.swift */; };
 		3769F16C26B993BB0006EAAC /* CameraSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769F16B26B993BB0006EAAC /* CameraSetting.swift */; };
+		37852ACB26BADE0B0003F9D1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3769F16126B98F430006EAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3769F16726B990260006EAAC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3769F16B26B993BB0006EAAC /* CameraSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSetting.swift; sourceTree = "<group>"; };
+		37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3769F15326B98F410006EAAC /* AppDelegate.swift */,
 				3769F15526B98F410006EAAC /* SceneDelegate.swift */,
 				3769F16726B990260006EAAC /* MainViewController.swift */,
+				37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */,
 				3769F16A26B991AC0006EAAC /* Template */,
 				3769F16926B991A10006EAAC /* Setting */,
 				3769F15926B98F410006EAAC /* Main.storyboard */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3769F15426B98F410006EAAC /* AppDelegate.swift in Sources */,
+				37852ACB26BADE0B0003F9D1 /* CameraViewController.swift in Sources */,
 				3769F16C26B993BB0006EAAC /* CameraSetting.swift in Sources */,
 				3769F15626B98F410006EAAC /* SceneDelegate.swift in Sources */,
 				3769F16826B990260006EAAC /* MainViewController.swift in Sources */,
