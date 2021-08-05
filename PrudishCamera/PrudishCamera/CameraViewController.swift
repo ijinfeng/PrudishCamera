@@ -41,6 +41,9 @@ class CameraViewController: UIViewController {
             print(metadataOutput.availableMetadataObjectTypes)
             if metadataOutput.availableMetadataObjectTypes.contains(.face) {
                 metadataOutput.metadataObjectTypes = [.face]
+            } else {
+                print("Unsupport face type.")
+                return
             }
             
             session .beginConfiguration()
