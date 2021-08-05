@@ -15,4 +15,9 @@ class MainViewController: UIViewController {
         view.backgroundColor = .white
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let vc = CameraViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
