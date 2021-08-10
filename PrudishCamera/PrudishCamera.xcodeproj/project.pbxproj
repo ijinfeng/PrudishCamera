@@ -64,7 +64,6 @@
 				3769F15526B98F410006EAAC /* SceneDelegate.swift */,
 				3769F16726B990260006EAAC /* MainViewController.swift */,
 				37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */,
-				3769F16A26B991AC0006EAAC /* Template */,
 				3769F16926B991A10006EAAC /* Setting */,
 				3769F15926B98F410006EAAC /* Main.storyboard */,
 				3769F15C26B98F430006EAAC /* Assets.xcassets */,
@@ -80,13 +79,6 @@
 				3769F16B26B993BB0006EAAC /* CameraSetting.swift */,
 			);
 			path = Setting;
-			sourceTree = "<group>";
-		};
-		3769F16A26B991AC0006EAAC /* Template */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +305,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NK9M2883N3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PrudishCamera",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PrudishCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,6 +331,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NK9M2883N3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PrudishCamera",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PrudishCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

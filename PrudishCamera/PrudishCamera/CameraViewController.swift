@@ -7,11 +7,12 @@
 
 import UIKit
 import AVFoundation
+import Vision
 
 class CameraViewController: UIViewController {
     
     
-    private let outputQueue = DispatchQueue.init(label: "output")
+    private let outputQueue = DispatchQueue.init(label: "123")
     
     private let session = AVCaptureSession()
     
@@ -27,24 +28,44 @@ class CameraViewController: UIViewController {
     
     
     private func setupDevice() {
+        if session.canSetSessionPreset(.iFrame1280x720) {
+            session.canSetSessionPreset(.iFrame1280x720)
+        }
+        
+        
+        
         guard let device = AVCaptureDevice.default(for: .video) else {
             return
         }
+        
+        // Back Camera
+        print(device.localizedName)
+        // com.apple.avfoundation.avcapturedevice.built-in_video:0
+        print(device.modelID)
+        
+        print(device.position)
         do {
             let deviceInput = try AVCaptureDeviceInput.init(device: device)
             let output = AVCaptureVideoDataOutput()
             output.setSampleBufferDelegate(self, queue: outputQueue)
             output.videoSettings = [String(kCVPixelBufferPixelFormatTypeKey): kCVPixelFormatType_32BGRA]
+            output.alwaysDiscardsLateVideoFrames = true
+//            let c = CIDetector()
+//            let metadataOutput = AVCaptureMetadataOutput()
+//            metadataOutput.setMetadataObjectsDelegate(self, queue: outputQueue)
+//            print("availableMetadataObjectTypes=\(metadataOutput.availableMetadataObjectTypes)")
+//
+//            let types: [AVMetadataObject.ObjectType] = [.qr]
+//
+//            var setTypes: [AVMetadataObject.ObjectType] = []
+//
+//            for type in types {
+//                if metadataOutput.availableMetadataObjectTypes.contains(type) {
+//                    setTypes.append(type)
+//                }
+//            }
+//            metadataOutput.metadataObjectTypes = setTypes
             
-            let metadataOutput = AVCaptureMetadataOutput()
-            metadataOutput.setMetadataObjectsDelegate(self, queue: outputQueue)
-            print(metadataOutput.availableMetadataObjectTypes)
-            if metadataOutput.availableMetadataObjectTypes.contains(.face) {
-                metadataOutput.metadataObjectTypes = [.face]
-            } else {
-                print("Unsupport face type.")
-                return
-            }
             
             session .beginConfiguration()
             if session.canAddInput(deviceInput) {
@@ -56,10 +77,15 @@ class CameraViewController: UIViewController {
             if session.canAddOutput(output) {
                 session.addOutput(output)
             }
-            if session.canAddOutput(metadataOutput) {
-                session.addOutput(metadataOutput)
-            }
+//            if session.canAddOutput(metadataOutput) {
+//                session.addOutput(metadataOutput)
+//            }
             session.commitConfiguration()
+            
+            let previewLayer = AVCaptureVideoPreviewLayer.init(session: session)
+            previewLayer.frame = view.bounds
+            view.layer.addSublayer(previewLayer)
+            
             
         } catch {
             print("There are no availd device input: \(error)")
@@ -81,9 +107,15 @@ extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         guard let objects = currentMetadataObjects else {
             return
         }
+        print("objects===\(objects)")
         for obj in objects {
+            
             print(obj)
         }
+    }
+    
+    func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        print("captureOutput====")
     }
 }
 
@@ -91,5 +123,6 @@ extension CameraViewController: AVCaptureMetadataOutputObjectsDelegate {
     // Called whenever an AVCaptureMetadataOutput instance emits new objects through a connection.
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         currentMetadataObjects = metadataObjects
+        print("metadataOutput======")
     }
 }
