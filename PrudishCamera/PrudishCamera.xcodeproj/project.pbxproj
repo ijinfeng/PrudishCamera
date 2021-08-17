@@ -15,6 +15,9 @@
 		3769F16826B990260006EAAC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769F16726B990260006EAAC /* MainViewController.swift */; };
 		3769F16C26B993BB0006EAAC /* CameraSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769F16B26B993BB0006EAAC /* CameraSetting.swift */; };
 		37852ACB26BADE0B0003F9D1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */; };
+		7865042B26CB9E6C0068FDA7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7865042A26CB9E6C0068FDA7 /* SettingViewController.swift */; };
+		7865042E26CBA54A0068FDA7 /* AnchorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7865042D26CBA54A0068FDA7 /* AnchorLayer.swift */; };
+		7865043126CBB6C10068FDA7 /* FaceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7865043026CBB6C10068FDA7 /* FaceHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		3769F16726B990260006EAAC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3769F16B26B993BB0006EAAC /* CameraSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSetting.swift; sourceTree = "<group>"; };
 		37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7865042A26CB9E6C0068FDA7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		7865042D26CBA54A0068FDA7 /* AnchorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorLayer.swift; sourceTree = "<group>"; };
+		7865043026CBB6C10068FDA7 /* FaceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 				3769F15526B98F410006EAAC /* SceneDelegate.swift */,
 				3769F16726B990260006EAAC /* MainViewController.swift */,
 				37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */,
+				7865042D26CBA54A0068FDA7 /* AnchorLayer.swift */,
+				7865043026CBB6C10068FDA7 /* FaceHandler.swift */,
 				3769F16926B991A10006EAAC /* Setting */,
 				3769F15926B98F410006EAAC /* Main.storyboard */,
 				3769F15C26B98F430006EAAC /* Assets.xcassets */,
@@ -77,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				3769F16B26B993BB0006EAAC /* CameraSetting.swift */,
+				7865042A26CB9E6C0068FDA7 /* SettingViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -151,11 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7865042E26CBA54A0068FDA7 /* AnchorLayer.swift in Sources */,
+				7865043126CBB6C10068FDA7 /* FaceHandler.swift in Sources */,
 				3769F15426B98F410006EAAC /* AppDelegate.swift in Sources */,
 				37852ACB26BADE0B0003F9D1 /* CameraViewController.swift in Sources */,
 				3769F16C26B993BB0006EAAC /* CameraSetting.swift in Sources */,
 				3769F15626B98F410006EAAC /* SceneDelegate.swift in Sources */,
 				3769F16826B990260006EAAC /* MainViewController.swift in Sources */,
+				7865042B26CB9E6C0068FDA7 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

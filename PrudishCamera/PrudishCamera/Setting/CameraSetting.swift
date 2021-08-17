@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Setting: NSObject {
     enum Template {
@@ -14,7 +15,30 @@ class Setting: NSObject {
         case toutiao
     }
     
+    /// 模版类型
     var template: Template = .defalut
+    /// 是否开启雷达提示
+    /// 开启后在人脸达到最佳焦点附近时会声音提示
+    var openRadar = false
+    /// 是否开启震动提示
+    /// 开启后在人脸达到最佳焦点附近时会震动提示
+    var openShake = false
+    /// 是否开启自动对焦
+    /// 关闭则需要手动设置最佳焦点
+    var openAutoFocusing = true
+    /// 手动设置的焦点
+    var customFocusingValue: CGPoint?
+    /// 是否开启预览
+    var openPreview = false
+    
+    
+    enum AnchorType {
+        /// 十字锚点
+        case cross
+        /// 三点：左眼，右眼，嘴巴
+        case threePoint
+    }
+    
     
     required init?(coder: NSCoder) {
         super.init()

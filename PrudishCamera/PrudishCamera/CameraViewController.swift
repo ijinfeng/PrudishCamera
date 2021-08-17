@@ -12,13 +12,18 @@ import Vision
 class CameraViewController: UIViewController {
     
     
-    private let outputQueue = DispatchQueue.init(label: "123")
+    private let outputQueue = DispatchQueue.init(label: "ijinfeng.output")
     
     private let session = AVCaptureSession()
     
     private var stopped = false
     
     private var currentMetadataObjects: [AVMetadataObject]?
+    
+//    private let anchroLayer = AnchorLayer()
+    private let anchroLayer = CALayer()
+    
+    private let faceHandler = FaceHandler()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +38,8 @@ class CameraViewController: UIViewController {
         }
         
         
-        
-        guard let device = AVCaptureDevice.default(for: .video) else {
+        let discoverySession = AVCaptureDevice.DiscoverySession.init(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .front)
+        guard let device = discoverySession.devices.first else {
             return
         }
         
@@ -48,45 +53,28 @@ class CameraViewController: UIViewController {
             let deviceInput = try AVCaptureDeviceInput.init(device: device)
             let output = AVCaptureVideoDataOutput()
             output.setSampleBufferDelegate(self, queue: outputQueue)
-            output.videoSettings = [String(kCVPixelBufferPixelFormatTypeKey): kCVPixelFormatType_32BGRA]
             output.alwaysDiscardsLateVideoFrames = true
-//            let c = CIDetector()
-//            let metadataOutput = AVCaptureMetadataOutput()
-//            metadataOutput.setMetadataObjectsDelegate(self, queue: outputQueue)
-//            print("availableMetadataObjectTypes=\(metadataOutput.availableMetadataObjectTypes)")
-//
-//            let types: [AVMetadataObject.ObjectType] = [.qr]
-//
-//            var setTypes: [AVMetadataObject.ObjectType] = []
-//
-//            for type in types {
-//                if metadataOutput.availableMetadataObjectTypes.contains(type) {
-//                    setTypes.append(type)
-//                }
-//            }
-//            metadataOutput.metadataObjectTypes = setTypes
-            
             
             session .beginConfiguration()
-            if session.canAddInput(deviceInput) {
-                session.addInput(deviceInput)
-            }
             if session.canSetSessionPreset(.hd1280x720) {
                 session.sessionPreset = .hd1280x720
+            }
+            if session.canAddInput(deviceInput) {
+                session.addInput(deviceInput)
             }
             if session.canAddOutput(output) {
                 session.addOutput(output)
             }
-//            if session.canAddOutput(metadataOutput) {
-//                session.addOutput(metadataOutput)
-//            }
             session.commitConfiguration()
             
             let previewLayer = AVCaptureVideoPreviewLayer.init(session: session)
             previewLayer.frame = view.bounds
             view.layer.addSublayer(previewLayer)
             
+            anchroLayer.frame = view.bounds
+            view.layer.addSublayer(anchroLayer)
             
+            faceHandler.anchor = anchroLayer
         } catch {
             print("There are no availd device input: \(error)")
         }
@@ -100,29 +88,40 @@ class CameraViewController: UIViewController {
     }
 }
 
+// 处理人脸数据
+extension CameraViewController {
+    private func handleSampleBuffer(_ buffer: CMSampleBuffer) {
+        guard let cvImageBuffer = CMSampleBufferGetImageBuffer(buffer) else {
+            return
+        }
+        let ciImage = CIImage(cvImageBuffer: cvImageBuffer)
+        
+        faceHandler.handleImage(ciImage)
+        
+//        let context = CIContext()
+//        guard let detector = CIDetector(ofType: CIDetectorTypeFace, context: context, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh]) else {
+//            return
+//        }
+//        let faces = detector.features(in: ciImage)
+//        if faces.count > 0 {
+//            print("====识别到人脸\(faces.count)")
+//            session.stopRunning()
+//        }
+//        for face in faces {
+//            let faceFeature = face as! CIFaceFeature
+//            anchroLayer.updateAnchor(faceFeature)
+//        }
+    }
+}
+
 
 extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     // Called whenever an AVCaptureVideoDataOutput instance outputs a new video frame.
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        guard let objects = currentMetadataObjects else {
-            return
-        }
-        print("objects===\(objects)")
-        for obj in objects {
-            
-            print(obj)
-        }
+        handleSampleBuffer(sampleBuffer)
     }
     
     func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        print("captureOutput====")
-    }
-}
-
-extension CameraViewController: AVCaptureMetadataOutputObjectsDelegate {
-    // Called whenever an AVCaptureMetadataOutput instance emits new objects through a connection.
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        currentMetadataObjects = metadataObjects
-        print("metadataOutput======")
+        
     }
 }
