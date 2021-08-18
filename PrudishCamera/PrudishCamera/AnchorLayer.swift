@@ -7,10 +7,14 @@
 
 import Foundation
 import UIKit
+import Vision
+import AVFoundation
 
 /// 十字锚点
 class AnchorLayer: CALayer {
-    var type: Setting.AnchorType = Setting.AnchorType.threePoint
+    var type: Setting.AnchorType = Setting.AnchorType.cross
+    
+    var previewLayer: AVCaptureVideoPreviewLayer?
     
     lazy var leftEye = CALayer()
     lazy var rightEye = CALayer()
@@ -25,9 +29,8 @@ class AnchorLayer: CALayer {
     
     override init() {
         super.init()
-        isHidden = true
         
-        let color = UIColor.white.cgColor
+        let color = UIColor.black.cgColor
         
         if type == .cross {
             addSublayer(crossv)
@@ -35,9 +38,6 @@ class AnchorLayer: CALayer {
             
             crossv.backgroundColor = color
             crossh.backgroundColor = crossv.backgroundColor
-            
-            crossv.frame = CGRect(x: 0, y: 0, width: 5, height: 30)
-            crossh.frame = CGRect(x: 0, y: 0, width: 30, height: 5)
         } else {
             addSublayer(leftEye)
             addSublayer(rightEye)
@@ -46,11 +46,10 @@ class AnchorLayer: CALayer {
             leftEye.backgroundColor = color
             rightEye.backgroundColor = leftEye.backgroundColor
             mouth.backgroundColor = leftEye.backgroundColor
-            
-            leftEye.frame = CGRect(x: 0, y: 0, width: 5, height: 5)
-            rightEye.frame = CGRect(x: 0, y: 0, width: 5, height: 5)
-            mouth.frame = CGRect(x: 0, y: 0, width: 10, height: 5)
         }
+        
+        leftEye.borderWidth = 1
+        leftEye.borderColor = color
     }
     
     required init?(coder: NSCoder) {
@@ -88,5 +87,66 @@ class AnchorLayer: CALayer {
             isHidden = true
             
         }
+    }
+    
+    
+    
+    func handleImage(_ ciImage: CIImage) {
+        let vnRequest = VNImageRequestHandler(ciImage: ciImage)
+        let faceRequest = VNDetectFaceLandmarksRequest { (request, error) in
+            if error != nil {
+                print("error=\(String(describing: error))")
+                return
+            }
+            guard let results = request.results else {
+                return
+            }
+            self.handleFaces(results)
+        }
+        try? vnRequest.perform([faceRequest])
+    }
+    
+    private func handleFaces(_ faces: [Any]) {
+        for face in faces {
+            guard let observation = face as? VNFaceObservation else {
+                break
+            }
+            guard let faceLandmark = observation.landmarks else {
+                break
+            }
+           guard let point = faceLandmark.leftEye?.normalizedPoints.first else {
+                return
+            }
+            
+            let rect = observation.boundingBox
+            let screen = UIScreen.main.bounds
+            let w = rect.size.width * screen.size.width
+            let h = rect.size.height * screen.size.height
+            let x = rect.origin.x * screen.size.width
+            let y = screen.size.height -  rect.origin.y * screen.size.height - h
+            
+
+            DispatchQueue.main.async {
+                self.leftEye.frame = self.convert(rect: rect)
+                print("rect=\(rect), eye=\(self.leftEye.frame), hidden=\(self.leftEye.isHidden)")
+            }
+        }
+    }
+    
+    private func convert(rect: CGRect) -> CGRect {
+        guard let convertLayer = previewLayer else {
+            return CGRect.zero
+        }
+        
+        let cr = convertLayer.layerRectConverted(fromMetadataOutputRect: rect)
+        return CGRect(x: UIScreen.main.bounds.size.width - cr.origin.x - cr.size.width, y: cr.origin.y, width: cr.size.width, height: cr.size.height)
+      }
+    
+    private func convert(point: CGPoint) -> CGPoint {
+        guard let convertLayer = previewLayer else {
+            return CGPoint.zero
+        }
+        
+        return convertLayer.layerPointConverted(fromCaptureDevicePoint: point)
     }
 }

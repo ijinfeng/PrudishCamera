@@ -1,0 +1,20 @@
+PODS:
+  - AlertMaker (0.1.25):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - AlertMaker (~> 0.1.25)
+
+SPEC REPOS:
+  trunk:
+    - AlertMaker
+    - Masonry
+
+SPEC CHECKSUMS:
+  AlertMaker: ac8b05b39f7b794b6119182b0c2ef453431cdfe2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: ad9fd793b19857be10a46b832249be1829957e52
+
+COCOAPODS: 1.10.1

@@ -20,10 +20,7 @@ class CameraViewController: UIViewController {
     
     private var currentMetadataObjects: [AVMetadataObject]?
     
-//    private let anchroLayer = AnchorLayer()
-    private let anchroLayer = CALayer()
-    
-    private let faceHandler = FaceHandler()
+    private let anchroLayer = AnchorLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,9 +69,10 @@ class CameraViewController: UIViewController {
             view.layer.addSublayer(previewLayer)
             
             anchroLayer.frame = view.bounds
-            view.layer.addSublayer(anchroLayer)
+            anchroLayer.previewLayer = previewLayer
+            view.layer.insertSublayer(anchroLayer, above: previewLayer)
             
-            faceHandler.anchor = anchroLayer
+            print("frame====\(anchroLayer.frame)")
         } catch {
             print("There are no availd device input: \(error)")
         }
@@ -96,7 +94,7 @@ extension CameraViewController {
         }
         let ciImage = CIImage(cvImageBuffer: cvImageBuffer)
         
-        faceHandler.handleImage(ciImage)
+        anchroLayer.handleImage(ciImage)
         
 //        let context = CIContext()
 //        guard let detector = CIDetector(ofType: CIDetectorTypeFace, context: context, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh]) else {

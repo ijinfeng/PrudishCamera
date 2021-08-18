@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00195F82FB38EE31B96B0BF13495C5EB /* UIColor+XCAlertColor.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD4E4967893E7A13E1ECB8C2509F846 /* UIColor+XCAlertColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		025F14A1E09C398978E2C517CB7C1443 /* Pods-PrudishCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE7CE0D9B04D47F55E53A0216A55E3D /* Pods-PrudishCamera-dummy.m */; };
+		05713B6CD0AF755FE77EDDE2C983E0E2 /* Pods-PrudishCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 583AFFB5BEDED5307EB6232D11EF5691 /* Pods-PrudishCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08C45D3C45C8854751DC240EBB01E16A /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7E9DB8B830BB7D3CB6D2F60BA3E346 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		159CD6BF908AD2D01CB4CB39381A6B18 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BD96BF7651F66E529B009DB51F6F84 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A183407C8AB8ADCEB31531544800DC /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D53AB1A063313C2512B49CE36FD3D73 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1823369720DB55CC2C9499D9D0DC2C17 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76ABD40DB4339CFEB79556720CB13378 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		186267A93CA43F491E1C6CED26840DB3 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 357074E515D8018190DC7068044FA011 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CDDE93DADDB5D20830FB1D8DD9F51BA /* XCAlertMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2C88753AD09CD41D27853E9A8A30CC /* XCAlertMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9572BDDD3A46545F553E21F50E0A0B /* XCCustomSheetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C1FC2EBDA0D869C352EDE87C30D4D6 /* XCCustomSheetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241F74C8AE9CA89975A1ABF9B369AD64 /* XCCustomAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFAE541D6F12396A0A5C18F1C075E69 /* XCCustomAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29E4423324D9B80526B59E390CDC4DF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE446476C51FAE0ACFF4FBB24E50A65 /* Foundation.framework */; };
+		2D2B9F273BDD4DE1DAD3F582B3D768D3 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BED9EB77B7FFBEAB65D6F99A2A83FAB5 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E079946E8E69D49501F7A988E0E9597 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E10ED310E7E0CD0C199A5EFAE16777 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EB04387B223E5F43970CFDF6879837A /* UIColor+XCAlertColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 302C55A12DAFCF52F971AB7D1C50AADC /* UIColor+XCAlertColor.m */; };
+		2ED9592D91004E3AB2DF97A85D443500 /* AlertMaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EF40BAB34901E9D1F1038AA9537329 /* AlertMaker-dummy.m */; };
+		31F43FE586199D2D9F5F561E7B02F2CB /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB13565AE611E0D447AA8FE3C8FDBAA /* View+MASAdditions.m */; };
+		3432130C89A2090A026D7C656C4A416A /* XCCustomAlertMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = BD93F6963DA1BF3F2FA729ACD0E0172E /* XCCustomAlertMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1A4381DF1579F011458E004F650A4A /* XCAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA46C1AD95FDB23846D7A271CB8B53B /* XCAlertMaker.m */; };
+		419D145817D1E5B649CC694F7D1E67CA /* XCButtonAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFCE062F56FB2CC0C9EED5A8A954E1 /* XCButtonAttribute.m */; };
+		4BB3487E3CF7EB9AF014E85F147FFB7D /* XCButtonAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 22FE910FA17D3888A4E717E495B41196 /* XCButtonAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3593DFB23251ABEC816E4BF490146C /* XCCustomUISetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D98658E66C74D81FB006D2F818A37AB /* XCCustomUISetting.m */; };
+		5854DF71DFFA0427CE8DC9E7121E2072 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C398F74C16DB8E4404407AB9FE1B33 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D73C14B4E9EABC37E416FA866412ADC /* XCCustomUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D71799188ADCCB35E0B91203D805F71 /* XCCustomUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D778F576CBF7C29FCBC0F4DA670B203 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3819E2081CD1789B72E81D7BCE7A3685 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EAD69B9D796717A162910608DD7F869 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 0578CCC59D21DD28F9BE2BED2BB0C751 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64654034BAC7ABD179F8DA354E679461 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB2E7FE875B4B4B3EEE3F91E59D092 /* MASConstraint.m */; };
+		6B004A19F969F73ACF921EA1264038DC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE3856AA5AEC237A3DF9D056C04265C /* MASCompositeConstraint.m */; };
+		6B465E306A008ED23695CA24FDCF99F0 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 962DF7A82D7668D52BA436CEF8709853 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7132671408DA759485919609EAA375D3 /* XCButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078B01091E45D106527EEDA7C3C744D /* XCButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7292D54041E292651CEC1EC594013B28 /* XCCustomAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 564869780DCB6069125C999CC3AFF500 /* XCCustomAlertMaker.m */; };
+		79A434AF9018AD5650B7737931174620 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 403276B2B141AF7074D28D0064610C3E /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9099CB812AF4693728955C9031BC66C4 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 393F12FF74E1F53D339C2330197D880E /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		950A9B3ABE09A1803F31EC536A27211B /* XCNormalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E2687D6F40A25921554DC24532C20 /* XCNormalButton.m */; };
+		971A7C5DCDCDC178413BD51766FC9995 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C5064C4BD334B52481DF082A42C618B2 /* ViewController+MASAdditions.m */; };
+		97D1BB64E1371C3920F9CEC53400C3C1 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28864E3F11E1DDE7AEF55AFFD8B0FE /* Masonry.framework */; };
+		A0ADF9EBBF0E88AF225582A9EFBA7508 /* XCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C135B7A2D38640A524124691E2A9728 /* XCButton.m */; };
+		A7570556EB5FE23D465C9BFE39C59091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE446476C51FAE0ACFF4FBB24E50A65 /* Foundation.framework */; };
+		AEAACD238107B68B8BFDA4437F88F1CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE446476C51FAE0ACFF4FBB24E50A65 /* Foundation.framework */; };
+		AFD59EDE0AB29126D87204838329A754 /* XCCustomUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E5556954EA72A0766F28D2450565 /* XCCustomUIHelper.m */; };
+		B2DC4D7028F88DBADE381290A57FDB2B /* XCNormalButtonAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 88581A40E2CB1548E4B9F2F9C0AB9719 /* XCNormalButtonAttribute.m */; };
+		B43662F8DF73FB75FA03F9EB1DE83F42 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C802FA128D1F9D19236ABF706FBBE2 /* NSArray+MASAdditions.m */; };
+		B56A4785D3EAEE55472B15E3EC721F4F /* XCNormalButtonAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6308F1ED723E560B95F065C5E0DF78 /* XCNormalButtonAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEF8265E0D67C5687EDDD8C55E3A0FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF773651727D50CDFC96D527CE18A6 /* UIKit.framework */; };
+		BF52DDAE9E595FED8F1B98D7511D20FF /* AlertMaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F96C42BD38A135F218796D3692850BF /* AlertMaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C06721722F95FF5E15942F55DB0043CF /* XCCustomUISetting.h in Headers */ = {isa = PBXBuildFile; fileRef = 302F08BD110AE90095F88A774CB13E45 /* XCCustomUISetting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7A981B7EE9DEA4F1F00C3429C68AC86 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0D4E0F2B95DF360DD32A5DD76DE77C /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C94454F722488BDE4A9976AB59DE0A50 /* XCCustomSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFBA27BBF590F519E971EBC7D1490FF /* XCCustomSheetView.m */; };
+		CA70A4A3C47D5A57C4F3DFF24827E5B7 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 997722D81849E69C98C9B5C44ACA918E /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD70B3B09CB49FCAB82A00C95EE49D26 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDB439250D5F9878204F1D0E1BF6782 /* Masonry-dummy.m */; };
+		DB689565281C7D93095C95AE07468DF7 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 929E781B6542631A7B1915420B406287 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85B5F19F20E20493C8E830EC8BF3CF1 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156713715B8BFDC54A2F066C3A9CFBA /* MASLayoutConstraint.m */; };
+		EA7D2848E0EC094D5812577573F1EDB3 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C939C70268E54E7B1A2163804A1E3323 /* MASConstraintMaker.m */; };
+		EB4299E3801615EB362530FB6890712F /* XCNormalButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FA27931E52E7F9E002BD7A78E3890182 /* XCNormalButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA5E2D9A1CC6F783B3F46FD0572618B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3565C0E84ED0D28B591B8786B9F6FD67 /* MASViewConstraint.m */; };
+		F36B8A42CF5D3F73272C50DE21CBA2AB /* XCCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF311CEB6AA6691884C947B90088AC6 /* XCCustomAlertView.m */; };
+		F3B0F1A0CB99F883F5F5623DBF449153 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEA86DDC2E0EF6648CD925ED34BD60D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		F7739537DB2933BAE13E559EAC77BCC1 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F89397D26B8E60A77E024F63C0A2DA /* MASViewAttribute.m */; };
+		FA6B12851E5396380BB95EC263EC18D7 /* XCAlertContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D2B17BC0894BD7A3019624062A50384 /* XCAlertContentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F754E37C98E53D7E57BB612F46DC3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57A438BFB4CDFCBDC01EB064D11E52D1;
+			remoteInfo = AlertMaker;
+		};
+		954CA747C070B2402B366F890838982F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		E7A20897B22EFF1D30C67885AE1C9BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0578CCC59D21DD28F9BE2BED2BB0C751 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		0D53AB1A063313C2512B49CE36FD3D73 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		1156713715B8BFDC54A2F066C3A9CFBA /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		1BB5FCAD4BF2E11D69FD23188D0EC1B0 /* Pods-PrudishCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrudishCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F6308F1ED723E560B95F065C5E0DF78 /* XCNormalButtonAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCNormalButtonAttribute.h; path = AlertMaker/AlertMaker/Classes/Button/XCNormalButtonAttribute.h; sourceTree = "<group>"; };
+		1F96C42BD38A135F218796D3692850BF /* AlertMaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertMaker-umbrella.h"; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2078B01091E45D106527EEDA7C3C744D /* XCButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCButton.h; path = AlertMaker/AlertMaker/Classes/Button/XCButton.h; sourceTree = "<group>"; };
+		22FE910FA17D3888A4E717E495B41196 /* XCButtonAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCButtonAttribute.h; path = AlertMaker/AlertMaker/Classes/Button/XCButtonAttribute.h; sourceTree = "<group>"; };
+		2469F3CEF365233364A9910C973BEF2E /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		25538EDE9073B3834327C52AA1B84AB2 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		27C1FC2EBDA0D869C352EDE87C30D4D6 /* XCCustomSheetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCCustomSheetView.h; path = AlertMaker/AlertMaker/Classes/XCCustomSheetView.h; sourceTree = "<group>"; };
+		2DB8F327B74F312A6D59D8C5AB3C7B8B /* Pods-PrudishCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrudishCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		2EA46C1AD95FDB23846D7A271CB8B53B /* XCAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCAlertMaker.m; path = AlertMaker/AlertMaker/Classes/XCAlertMaker.m; sourceTree = "<group>"; };
+		302C55A12DAFCF52F971AB7D1C50AADC /* UIColor+XCAlertColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+XCAlertColor.m"; path = "AlertMaker/AlertMaker/Classes/UIColor+XCAlertColor.m"; sourceTree = "<group>"; };
+		302F08BD110AE90095F88A774CB13E45 /* XCCustomUISetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCCustomUISetting.h; path = AlertMaker/AlertMaker/Classes/XCCustomUISetting.h; sourceTree = "<group>"; };
+		3565C0E84ED0D28B591B8786B9F6FD67 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		357074E515D8018190DC7068044FA011 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		35FB2E7FE875B4B4B3EEE3F91E59D092 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		36A0E5556954EA72A0766F28D2450565 /* XCCustomUIHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCCustomUIHelper.m; path = AlertMaker/AlertMaker/Classes/XCCustomUIHelper.m; sourceTree = "<group>"; };
+		3819E2081CD1789B72E81D7BCE7A3685 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		393F12FF74E1F53D339C2330197D880E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3D2B17BC0894BD7A3019624062A50384 /* XCAlertContentProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCAlertContentProtocol.h; path = AlertMaker/AlertMaker/Classes/XCAlertContentProtocol.h; sourceTree = "<group>"; };
+		3D7E9DB8B830BB7D3CB6D2F60BA3E346 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3FFAE541D6F12396A0A5C18F1C075E69 /* XCCustomAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCCustomAlertView.h; path = AlertMaker/AlertMaker/Classes/XCCustomAlertView.h; sourceTree = "<group>"; };
+		402E7C23819CAF0CCF4CCD3D873EBCA4 /* AlertMaker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlertMaker-Info.plist"; sourceTree = "<group>"; };
+		403276B2B141AF7074D28D0064610C3E /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		43C1DB597434F77C5F18BF8677228C24 /* Pods-PrudishCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PrudishCamera.modulemap"; sourceTree = "<group>"; };
+		47EF40BAB34901E9D1F1038AA9537329 /* AlertMaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertMaker-dummy.m"; sourceTree = "<group>"; };
+		4C135B7A2D38640A524124691E2A9728 /* XCButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCButton.m; path = AlertMaker/AlertMaker/Classes/Button/XCButton.m; sourceTree = "<group>"; };
+		564869780DCB6069125C999CC3AFF500 /* XCCustomAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCCustomAlertMaker.m; path = AlertMaker/AlertMaker/Classes/XCCustomAlertMaker.m; sourceTree = "<group>"; };
+		583AFFB5BEDED5307EB6232D11EF5691 /* Pods-PrudishCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrudishCamera-umbrella.h"; sourceTree = "<group>"; };
+		59CDC0A68E16ECFB4608A941668D2E21 /* Pods-PrudishCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrudishCamera-frameworks.sh"; sourceTree = "<group>"; };
+		5A17370CEC8327CB6A3D3E41906D9C98 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		5D98658E66C74D81FB006D2F818A37AB /* XCCustomUISetting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCCustomUISetting.m; path = AlertMaker/AlertMaker/Classes/XCCustomUISetting.m; sourceTree = "<group>"; };
+		6B28864E3F11E1DDE7AEF55AFFD8B0FE /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E586FEE33EB4E38AACD0A1FCFE54892 /* Pods-PrudishCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrudishCamera-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FFBA27BBF590F519E971EBC7D1490FF /* XCCustomSheetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCCustomSheetView.m; path = AlertMaker/AlertMaker/Classes/XCCustomSheetView.m; sourceTree = "<group>"; };
+		76ABD40DB4339CFEB79556720CB13378 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		7AEA86DDC2E0EF6648CD925ED34BD60D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		7D71799188ADCCB35E0B91203D805F71 /* XCCustomUIHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCCustomUIHelper.h; path = AlertMaker/AlertMaker/Classes/XCCustomUIHelper.h; sourceTree = "<group>"; };
+		7E382E2681201B39FB646E610235592C /* AlertMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlertMaker.framework; path = AlertMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		804F469072A84DD34CF42BDA61021C9E /* Pods_PrudishCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrudishCamera.framework; path = "Pods-PrudishCamera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		812B0170B5B21950CB162EEA157FB01A /* Pods-PrudishCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrudishCamera-Info.plist"; sourceTree = "<group>"; };
+		88581A40E2CB1548E4B9F2F9C0AB9719 /* XCNormalButtonAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCNormalButtonAttribute.m; path = AlertMaker/AlertMaker/Classes/Button/XCNormalButtonAttribute.m; sourceTree = "<group>"; };
+		88B043FDA7F6435669A601B8DE78B973 /* Pods-PrudishCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrudishCamera.release.xcconfig"; sourceTree = "<group>"; };
+		8BE3856AA5AEC237A3DF9D056C04265C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		8D32FA6A178FECDDABC699A6647330C3 /* AlertMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertMaker.release.xcconfig; sourceTree = "<group>"; };
+		929E781B6542631A7B1915420B406287 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		962DF7A82D7668D52BA436CEF8709853 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		997722D81849E69C98C9B5C44ACA918E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		9B06F354C6CEFEF55E4F52DF51ABF31D /* AlertMaker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertMaker-prefix.pch"; sourceTree = "<group>"; };
+		9BB13565AE611E0D447AA8FE3C8FDBAA /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F2C88753AD09CD41D27853E9A8A30CC /* XCAlertMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCAlertMaker.h; path = AlertMaker/AlertMaker/Classes/XCAlertMaker.h; sourceTree = "<group>"; };
+		A4F89397D26B8E60A77E024F63C0A2DA /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		A9E10ED310E7E0CD0C199A5EFAE16777 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		ACD4E4967893E7A13E1ECB8C2509F846 /* UIColor+XCAlertColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+XCAlertColor.h"; path = "AlertMaker/AlertMaker/Classes/UIColor+XCAlertColor.h"; sourceTree = "<group>"; };
+		B6BFCE062F56FB2CC0C9EED5A8A954E1 /* XCButtonAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCButtonAttribute.m; path = AlertMaker/AlertMaker/Classes/Button/XCButtonAttribute.m; sourceTree = "<group>"; };
+		B70E2687D6F40A25921554DC24532C20 /* XCNormalButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCNormalButton.m; path = AlertMaker/AlertMaker/Classes/Button/XCNormalButton.m; sourceTree = "<group>"; };
+		BA823182FD501898CC3F65F15E6ECB6A /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		BD93F6963DA1BF3F2FA729ACD0E0172E /* XCCustomAlertMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCCustomAlertMaker.h; path = AlertMaker/AlertMaker/Classes/XCCustomAlertMaker.h; sourceTree = "<group>"; };
+		BEB9A1F67CBE21A59EFE1BDCFE1D9538 /* AlertMaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlertMaker.modulemap; sourceTree = "<group>"; };
+		BED9EB77B7FFBEAB65D6F99A2A83FAB5 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		C3BD96BF7651F66E529B009DB51F6F84 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		C5064C4BD334B52481DF082A42C618B2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		C939C70268E54E7B1A2163804A1E3323 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		CBE7CE0D9B04D47F55E53A0216A55E3D /* Pods-PrudishCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrudishCamera-dummy.m"; sourceTree = "<group>"; };
+		CF74EC2E54EE38239C8B6CDA4238D1BE /* AlertMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertMaker.debug.xcconfig; sourceTree = "<group>"; };
+		CFE446476C51FAE0ACFF4FBB24E50A65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2C398F74C16DB8E4404407AB9FE1B33 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		DBF311CEB6AA6691884C947B90088AC6 /* XCCustomAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCCustomAlertView.m; path = AlertMaker/AlertMaker/Classes/XCCustomAlertView.m; sourceTree = "<group>"; };
+		DE0D4E0F2B95DF360DD32A5DD76DE77C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		DEDB439250D5F9878204F1D0E1BF6782 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		E5C802FA128D1F9D19236ABF706FBBE2 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		F3CF773651727D50CDFC96D527CE18A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F82802136100D4DA03A6996A30A877CA /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		FA27931E52E7F9E002BD7A78E3890182 /* XCNormalButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCNormalButton.h; path = AlertMaker/AlertMaker/Classes/Button/XCNormalButton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FDC5DFADD93FE7BB3B1E7B1FBB3B572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E4423324D9B80526B59E390CDC4DF4 /* Foundation.framework in Frameworks */,
+				BBEF8265E0D67C5687EDDD8C55E3A0FD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948ED7B282906C1BBBB12EE42F6A7B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7570556EB5FE23D465C9BFE39C59091 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E552235A2A08476B356FD582967F0B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAACD238107B68B8BFDA4437F88F1CA /* Foundation.framework in Frameworks */,
+				97D1BB64E1371C3920F9CEC53400C3C1 /* Masonry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A89E893E58F43397671E800B412BE03 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB9A1F67CBE21A59EFE1BDCFE1D9538 /* AlertMaker.modulemap */,
+				47EF40BAB34901E9D1F1038AA9537329 /* AlertMaker-dummy.m */,
+				402E7C23819CAF0CCF4CCD3D873EBCA4 /* AlertMaker-Info.plist */,
+				9B06F354C6CEFEF55E4F52DF51ABF31D /* AlertMaker-prefix.pch */,
+				1F96C42BD38A135F218796D3692850BF /* AlertMaker-umbrella.h */,
+				CF74EC2E54EE38239C8B6CDA4238D1BE /* AlertMaker.debug.xcconfig */,
+				8D32FA6A178FECDDABC699A6647330C3 /* AlertMaker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlertMaker";
+			sourceTree = "<group>";
+		};
+		0BA6D094D539BD4003B6A2B663799101 /* Pods-PrudishCamera */ = {
+			isa = PBXGroup;
+			children = (
+				43C1DB597434F77C5F18BF8677228C24 /* Pods-PrudishCamera.modulemap */,
+				1BB5FCAD4BF2E11D69FD23188D0EC1B0 /* Pods-PrudishCamera-acknowledgements.markdown */,
+				6E586FEE33EB4E38AACD0A1FCFE54892 /* Pods-PrudishCamera-acknowledgements.plist */,
+				CBE7CE0D9B04D47F55E53A0216A55E3D /* Pods-PrudishCamera-dummy.m */,
+				59CDC0A68E16ECFB4608A941668D2E21 /* Pods-PrudishCamera-frameworks.sh */,
+				812B0170B5B21950CB162EEA157FB01A /* Pods-PrudishCamera-Info.plist */,
+				583AFFB5BEDED5307EB6232D11EF5691 /* Pods-PrudishCamera-umbrella.h */,
+				2DB8F327B74F312A6D59D8C5AB3C7B8B /* Pods-PrudishCamera.debug.xcconfig */,
+				88B043FDA7F6435669A601B8DE78B973 /* Pods-PrudishCamera.release.xcconfig */,
+			);
+			name = "Pods-PrudishCamera";
+			path = "Target Support Files/Pods-PrudishCamera";
+			sourceTree = "<group>";
+		};
+		275889BE4FFE120E7DAEFCF5732E15C1 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				D2C398F74C16DB8E4404407AB9FE1B33 /* MASCompositeConstraint.h */,
+				8BE3856AA5AEC237A3DF9D056C04265C /* MASCompositeConstraint.m */,
+				962DF7A82D7668D52BA436CEF8709853 /* MASConstraint.h */,
+				35FB2E7FE875B4B4B3EEE3F91E59D092 /* MASConstraint.m */,
+				BED9EB77B7FFBEAB65D6F99A2A83FAB5 /* MASConstraint+Private.h */,
+				357074E515D8018190DC7068044FA011 /* MASConstraintMaker.h */,
+				C939C70268E54E7B1A2163804A1E3323 /* MASConstraintMaker.m */,
+				DE0D4E0F2B95DF360DD32A5DD76DE77C /* MASLayoutConstraint.h */,
+				1156713715B8BFDC54A2F066C3A9CFBA /* MASLayoutConstraint.m */,
+				0D53AB1A063313C2512B49CE36FD3D73 /* Masonry.h */,
+				403276B2B141AF7074D28D0064610C3E /* MASUtilities.h */,
+				0578CCC59D21DD28F9BE2BED2BB0C751 /* MASViewAttribute.h */,
+				A4F89397D26B8E60A77E024F63C0A2DA /* MASViewAttribute.m */,
+				A9E10ED310E7E0CD0C199A5EFAE16777 /* MASViewConstraint.h */,
+				3565C0E84ED0D28B591B8786B9F6FD67 /* MASViewConstraint.m */,
+				929E781B6542631A7B1915420B406287 /* NSArray+MASAdditions.h */,
+				E5C802FA128D1F9D19236ABF706FBBE2 /* NSArray+MASAdditions.m */,
+				393F12FF74E1F53D339C2330197D880E /* NSArray+MASShorthandAdditions.h */,
+				997722D81849E69C98C9B5C44ACA918E /* NSLayoutConstraint+MASDebugAdditions.h */,
+				7AEA86DDC2E0EF6648CD925ED34BD60D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				76ABD40DB4339CFEB79556720CB13378 /* View+MASAdditions.h */,
+				9BB13565AE611E0D447AA8FE3C8FDBAA /* View+MASAdditions.m */,
+				3D7E9DB8B830BB7D3CB6D2F60BA3E346 /* View+MASShorthandAdditions.h */,
+				C3BD96BF7651F66E529B009DB51F6F84 /* ViewController+MASAdditions.h */,
+				C5064C4BD334B52481DF082A42C618B2 /* ViewController+MASAdditions.m */,
+				E8DDBA8DC9A3DCBD7BFA1BCA111E45D9 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		8B9B1AC85CD951F73580B2776B7EA31B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CFE446476C51FAE0ACFF4FBB24E50A65 /* Foundation.framework */,
+				F3CF773651727D50CDFC96D527CE18A6 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9F606DC568852CCC7249095A2480C35C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BA6D094D539BD4003B6A2B663799101 /* Pods-PrudishCamera */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A1029603BC312EB2A2F1F34267C16375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E382E2681201B39FB646E610235592C /* AlertMaker.framework */,
+				1FFED36A657123030ABB700256D73F15 /* Masonry.framework */,
+				804F469072A84DD34CF42BDA61021C9E /* Pods_PrudishCamera.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F303B4D83EF5C7F8FFC07C200DF1DD /* AlertMaker */ = {
+			isa = PBXGroup;
+			children = (
+				ACD4E4967893E7A13E1ECB8C2509F846 /* UIColor+XCAlertColor.h */,
+				302C55A12DAFCF52F971AB7D1C50AADC /* UIColor+XCAlertColor.m */,
+				3D2B17BC0894BD7A3019624062A50384 /* XCAlertContentProtocol.h */,
+				9F2C88753AD09CD41D27853E9A8A30CC /* XCAlertMaker.h */,
+				2EA46C1AD95FDB23846D7A271CB8B53B /* XCAlertMaker.m */,
+				2078B01091E45D106527EEDA7C3C744D /* XCButton.h */,
+				4C135B7A2D38640A524124691E2A9728 /* XCButton.m */,
+				22FE910FA17D3888A4E717E495B41196 /* XCButtonAttribute.h */,
+				B6BFCE062F56FB2CC0C9EED5A8A954E1 /* XCButtonAttribute.m */,
+				BD93F6963DA1BF3F2FA729ACD0E0172E /* XCCustomAlertMaker.h */,
+				564869780DCB6069125C999CC3AFF500 /* XCCustomAlertMaker.m */,
+				3FFAE541D6F12396A0A5C18F1C075E69 /* XCCustomAlertView.h */,
+				DBF311CEB6AA6691884C947B90088AC6 /* XCCustomAlertView.m */,
+				27C1FC2EBDA0D869C352EDE87C30D4D6 /* XCCustomSheetView.h */,
+				6FFBA27BBF590F519E971EBC7D1490FF /* XCCustomSheetView.m */,
+				7D71799188ADCCB35E0B91203D805F71 /* XCCustomUIHelper.h */,
+				36A0E5556954EA72A0766F28D2450565 /* XCCustomUIHelper.m */,
+				302F08BD110AE90095F88A774CB13E45 /* XCCustomUISetting.h */,
+				5D98658E66C74D81FB006D2F818A37AB /* XCCustomUISetting.m */,
+				FA27931E52E7F9E002BD7A78E3890182 /* XCNormalButton.h */,
+				B70E2687D6F40A25921554DC24532C20 /* XCNormalButton.m */,
+				1F6308F1ED723E560B95F065C5E0DF78 /* XCNormalButtonAttribute.h */,
+				88581A40E2CB1548E4B9F2F9C0AB9719 /* XCNormalButtonAttribute.m */,
+				0A89E893E58F43397671E800B412BE03 /* Support Files */,
+			);
+			name = AlertMaker;
+			path = AlertMaker;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DF275781DF9628A2D5BF35F5D74F7BC1 /* Frameworks */,
+				D84D6EC9515A19B96CAF27DF7CEB33FC /* Pods */,
+				A1029603BC312EB2A2F1F34267C16375 /* Products */,
+				9F606DC568852CCC7249095A2480C35C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D84D6EC9515A19B96CAF27DF7CEB33FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7F303B4D83EF5C7F8FFC07C200DF1DD /* AlertMaker */,
+				275889BE4FFE120E7DAEFCF5732E15C1 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF275781DF9628A2D5BF35F5D74F7BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B28864E3F11E1DDE7AEF55AFFD8B0FE /* Masonry.framework */,
+				8B9B1AC85CD951F73580B2776B7EA31B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8DDBA8DC9A3DCBD7BFA1BCA111E45D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA823182FD501898CC3F65F15E6ECB6A /* Masonry.modulemap */,
+				DEDB439250D5F9878204F1D0E1BF6782 /* Masonry-dummy.m */,
+				F82802136100D4DA03A6996A30A877CA /* Masonry-Info.plist */,
+				5A17370CEC8327CB6A3D3E41906D9C98 /* Masonry-prefix.pch */,
+				3819E2081CD1789B72E81D7BCE7A3685 /* Masonry-umbrella.h */,
+				2469F3CEF365233364A9910C973BEF2E /* Masonry.debug.xcconfig */,
+				25538EDE9073B3834327C52AA1B84AB2 /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D7796EE29BD3D15EA96191FC196C2AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05713B6CD0AF755FE77EDDE2C983E0E2 /* Pods-PrudishCamera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5102D203B5012C90BC97B8993108DDBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF52DDAE9E595FED8F1B98D7511D20FF /* AlertMaker-umbrella.h in Headers */,
+				00195F82FB38EE31B96B0BF13495C5EB /* UIColor+XCAlertColor.h in Headers */,
+				FA6B12851E5396380BB95EC263EC18D7 /* XCAlertContentProtocol.h in Headers */,
+				1CDDE93DADDB5D20830FB1D8DD9F51BA /* XCAlertMaker.h in Headers */,
+				7132671408DA759485919609EAA375D3 /* XCButton.h in Headers */,
+				4BB3487E3CF7EB9AF014E85F147FFB7D /* XCButtonAttribute.h in Headers */,
+				3432130C89A2090A026D7C656C4A416A /* XCCustomAlertMaker.h in Headers */,
+				241F74C8AE9CA89975A1ABF9B369AD64 /* XCCustomAlertView.h in Headers */,
+				1F9572BDDD3A46545F553E21F50E0A0B /* XCCustomSheetView.h in Headers */,
+				5D73C14B4E9EABC37E416FA866412ADC /* XCCustomUIHelper.h in Headers */,
+				C06721722F95FF5E15942F55DB0043CF /* XCCustomUISetting.h in Headers */,
+				EB4299E3801615EB362530FB6890712F /* XCNormalButton.h in Headers */,
+				B56A4785D3EAEE55472B15E3EC721F4F /* XCNormalButtonAttribute.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CE17B44322D6E2148340F23CF7F313 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5854DF71DFFA0427CE8DC9E7121E2072 /* MASCompositeConstraint.h in Headers */,
+				2D2B9F273BDD4DE1DAD3F582B3D768D3 /* MASConstraint+Private.h in Headers */,
+				6B465E306A008ED23695CA24FDCF99F0 /* MASConstraint.h in Headers */,
+				186267A93CA43F491E1C6CED26840DB3 /* MASConstraintMaker.h in Headers */,
+				C7A981B7EE9DEA4F1F00C3429C68AC86 /* MASLayoutConstraint.h in Headers */,
+				5D778F576CBF7C29FCBC0F4DA670B203 /* Masonry-umbrella.h in Headers */,
+				17A183407C8AB8ADCEB31531544800DC /* Masonry.h in Headers */,
+				79A434AF9018AD5650B7737931174620 /* MASUtilities.h in Headers */,
+				5EAD69B9D796717A162910608DD7F869 /* MASViewAttribute.h in Headers */,
+				2E079946E8E69D49501F7A988E0E9597 /* MASViewConstraint.h in Headers */,
+				DB689565281C7D93095C95AE07468DF7 /* NSArray+MASAdditions.h in Headers */,
+				9099CB812AF4693728955C9031BC66C4 /* NSArray+MASShorthandAdditions.h in Headers */,
+				CA70A4A3C47D5A57C4F3DFF24827E5B7 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				1823369720DB55CC2C9499D9D0DC2C17 /* View+MASAdditions.h in Headers */,
+				08C45D3C45C8854751DC240EBB01E16A /* View+MASShorthandAdditions.h in Headers */,
+				159CD6BF908AD2D01CB4CB39381A6B18 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055984F4D816AED7F19E5B184E42E146 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				A4CE17B44322D6E2148340F23CF7F313 /* Headers */,
+				B8CCC4488440048E55677D20B5C2AA35 /* Sources */,
+				0FDC5DFADD93FE7BB3B1E7B1FBB3B572 /* Frameworks */,
+				7F0C3834F97512F84A8327D89575B6B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57A438BFB4CDFCBDC01EB064D11E52D1 /* AlertMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B67B4C6A3607583EB5128440CE9155 /* Build configuration list for PBXNativeTarget "AlertMaker" */;
+			buildPhases = (
+				5102D203B5012C90BC97B8993108DDBA /* Headers */,
+				857AD281B9256384700E9C67BD5DD730 /* Sources */,
+				E552235A2A08476B356FD582967F0B24 /* Frameworks */,
+				B40F54CFAC1AED3D8E373B73E18B8AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D42D9F3AE8A81231D26EF0DE5799252 /* PBXTargetDependency */,
+			);
+			name = AlertMaker;
+			productName = AlertMaker;
+			productReference = 7E382E2681201B39FB646E610235592C /* AlertMaker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE90E9FE556BBB46D0D8BAA15D7B7953 /* Pods-PrudishCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DEA46C4F95D3AF8812E2BCFADAF2D86 /* Build configuration list for PBXNativeTarget "Pods-PrudishCamera" */;
+			buildPhases = (
+				4D7796EE29BD3D15EA96191FC196C2AE /* Headers */,
+				F3C0855DA76E4372CC5395526CAF76DF /* Sources */,
+				948ED7B282906C1BBBB12EE42F6A7B84 /* Frameworks */,
+				5EB169DCB5F54A57F14922F34F1CE300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B184170C6AB31570899B83BC85F78D1F /* PBXTargetDependency */,
+				01275D0841D8BCB6AA4408E10E5D4C96 /* PBXTargetDependency */,
+			);
+			name = "Pods-PrudishCamera";
+			productName = "Pods-PrudishCamera";
+			productReference = 804F469072A84DD34CF42BDA61021C9E /* Pods_PrudishCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A1029603BC312EB2A2F1F34267C16375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57A438BFB4CDFCBDC01EB064D11E52D1 /* AlertMaker */,
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				FE90E9FE556BBB46D0D8BAA15D7B7953 /* Pods-PrudishCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EB169DCB5F54A57F14922F34F1CE300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F0C3834F97512F84A8327D89575B6B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40F54CFAC1AED3D8E373B73E18B8AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		857AD281B9256384700E9C67BD5DD730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED9592D91004E3AB2DF97A85D443500 /* AlertMaker-dummy.m in Sources */,
+				2EB04387B223E5F43970CFDF6879837A /* UIColor+XCAlertColor.m in Sources */,
+				3D1A4381DF1579F011458E004F650A4A /* XCAlertMaker.m in Sources */,
+				A0ADF9EBBF0E88AF225582A9EFBA7508 /* XCButton.m in Sources */,
+				419D145817D1E5B649CC694F7D1E67CA /* XCButtonAttribute.m in Sources */,
+				7292D54041E292651CEC1EC594013B28 /* XCCustomAlertMaker.m in Sources */,
+				F36B8A42CF5D3F73272C50DE21CBA2AB /* XCCustomAlertView.m in Sources */,
+				C94454F722488BDE4A9976AB59DE0A50 /* XCCustomSheetView.m in Sources */,
+				AFD59EDE0AB29126D87204838329A754 /* XCCustomUIHelper.m in Sources */,
+				4E3593DFB23251ABEC816E4BF490146C /* XCCustomUISetting.m in Sources */,
+				950A9B3ABE09A1803F31EC536A27211B /* XCNormalButton.m in Sources */,
+				B2DC4D7028F88DBADE381290A57FDB2B /* XCNormalButtonAttribute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8CCC4488440048E55677D20B5C2AA35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B004A19F969F73ACF921EA1264038DC /* MASCompositeConstraint.m in Sources */,
+				64654034BAC7ABD179F8DA354E679461 /* MASConstraint.m in Sources */,
+				EA7D2848E0EC094D5812577573F1EDB3 /* MASConstraintMaker.m in Sources */,
+				E85B5F19F20E20493C8E830EC8BF3CF1 /* MASLayoutConstraint.m in Sources */,
+				CD70B3B09CB49FCAB82A00C95EE49D26 /* Masonry-dummy.m in Sources */,
+				F7739537DB2933BAE13E559EAC77BCC1 /* MASViewAttribute.m in Sources */,
+				EDA5E2D9A1CC6F783B3F46FD0572618B /* MASViewConstraint.m in Sources */,
+				B43662F8DF73FB75FA03F9EB1DE83F42 /* NSArray+MASAdditions.m in Sources */,
+				F3B0F1A0CB99F883F5F5623DBF449153 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				31F43FE586199D2D9F5F561E7B02F2CB /* View+MASAdditions.m in Sources */,
+				971A7C5DCDCDC178413BD51766FC9995 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C0855DA76E4372CC5395526CAF76DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025F14A1E09C398978E2C517CB7C1443 /* Pods-PrudishCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01275D0841D8BCB6AA4408E10E5D4C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = E7A20897B22EFF1D30C67885AE1C9BFD /* PBXContainerItemProxy */;
+		};
+		4D42D9F3AE8A81231D26EF0DE5799252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 954CA747C070B2402B366F890838982F /* PBXContainerItemProxy */;
+		};
+		B184170C6AB31570899B83BC85F78D1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertMaker;
+			target = 57A438BFB4CDFCBDC01EB064D11E52D1 /* AlertMaker */;
+			targetProxy = 6F754E37C98E53D7E57BB612F46DC3B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		012597156D9FE3D51B93C1B286E20293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B043FDA7F6435669A601B8DE78B973 /* Pods-PrudishCamera.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		499CB1967C3571FC2ED891F15DE46F74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D32FA6A178FECDDABC699A6647330C3 /* AlertMaker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertMaker/AlertMaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertMaker/AlertMaker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlertMaker/AlertMaker.modulemap";
+				PRODUCT_MODULE_NAME = AlertMaker;
+				PRODUCT_NAME = AlertMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AD720F6541FF5D1FC5BE2C22FC47A3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF74EC2E54EE38239C8B6CDA4238D1BE /* AlertMaker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertMaker/AlertMaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertMaker/AlertMaker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlertMaker/AlertMaker.modulemap";
+				PRODUCT_MODULE_NAME = AlertMaker;
+				PRODUCT_NAME = AlertMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF989AC24B5DD30FF4821F607FF29F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB8F327B74F312A6D59D8C5AB3C7B8B /* Pods-PrudishCamera.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F85C31D13CB80625D17B2E774D2DD67D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25538EDE9073B3834327C52AA1B84AB2 /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD1DCFD710FD4CC3F762007846101587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2469F3CEF365233364A9910C973BEF2E /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055984F4D816AED7F19E5B184E42E146 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1DCFD710FD4CC3F762007846101587 /* Debug */,
+				F85C31D13CB80625D17B2E774D2DD67D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DEA46C4F95D3AF8812E2BCFADAF2D86 /* Build configuration list for PBXNativeTarget "Pods-PrudishCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF989AC24B5DD30FF4821F607FF29F46 /* Debug */,
+				012597156D9FE3D51B93C1B286E20293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B67B4C6A3607583EB5128440CE9155 /* Build configuration list for PBXNativeTarget "AlertMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD720F6541FF5D1FC5BE2C22FC47A3C6 /* Debug */,
+				499CB1967C3571FC2ED891F15DE46F74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,12 +15,13 @@
 		3769F16826B990260006EAAC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769F16726B990260006EAAC /* MainViewController.swift */; };
 		3769F16C26B993BB0006EAAC /* CameraSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769F16B26B993BB0006EAAC /* CameraSetting.swift */; };
 		37852ACB26BADE0B0003F9D1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */; };
+		40DC74EFEB3A50AEEF229447 /* Pods_PrudishCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35942339E8A3DE27A9DE2307 /* Pods_PrudishCamera.framework */; };
 		7865042B26CB9E6C0068FDA7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7865042A26CB9E6C0068FDA7 /* SettingViewController.swift */; };
 		7865042E26CBA54A0068FDA7 /* AnchorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7865042D26CBA54A0068FDA7 /* AnchorLayer.swift */; };
-		7865043126CBB6C10068FDA7 /* FaceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7865043026CBB6C10068FDA7 /* FaceHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35942339E8A3DE27A9DE2307 /* Pods_PrudishCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrudishCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3769F15026B98F410006EAAC /* PrudishCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrudishCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3769F15326B98F410006EAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3769F15526B98F410006EAAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +32,10 @@
 		3769F16726B990260006EAAC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3769F16B26B993BB0006EAAC /* CameraSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSetting.swift; sourceTree = "<group>"; };
 		37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		68A3443CD338744131D9FF49 /* Pods-PrudishCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrudishCamera.debug.xcconfig"; path = "Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		7865042A26CB9E6C0068FDA7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		7865042D26CBA54A0068FDA7 /* AnchorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorLayer.swift; sourceTree = "<group>"; };
-		7865043026CBB6C10068FDA7 /* FaceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceHandler.swift; sourceTree = "<group>"; };
+		7CE94E1E95624E880C90C48A /* Pods-PrudishCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrudishCamera.release.xcconfig"; path = "Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DC74EFEB3A50AEEF229447 /* Pods_PrudishCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +55,8 @@
 			children = (
 				3769F15226B98F410006EAAC /* PrudishCamera */,
 				3769F15126B98F410006EAAC /* Products */,
+				6C896FBB8817B0EAEE4D718D /* Pods */,
+				F5479B121BF1FA9A26D285A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +76,6 @@
 				3769F16726B990260006EAAC /* MainViewController.swift */,
 				37852ACA26BADE0B0003F9D1 /* CameraViewController.swift */,
 				7865042D26CBA54A0068FDA7 /* AnchorLayer.swift */,
-				7865043026CBB6C10068FDA7 /* FaceHandler.swift */,
 				3769F16926B991A10006EAAC /* Setting */,
 				3769F15926B98F410006EAAC /* Main.storyboard */,
 				3769F15C26B98F430006EAAC /* Assets.xcassets */,
@@ -90,6 +94,23 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		6C896FBB8817B0EAEE4D718D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68A3443CD338744131D9FF49 /* Pods-PrudishCamera.debug.xcconfig */,
+				7CE94E1E95624E880C90C48A /* Pods-PrudishCamera.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5479B121BF1FA9A26D285A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35942339E8A3DE27A9DE2307 /* Pods_PrudishCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3769F16426B98F430006EAAC /* Build configuration list for PBXNativeTarget "PrudishCamera" */;
 			buildPhases = (
+				0B599B5292B14033F2D6BBCB /* [CP] Check Pods Manifest.lock */,
 				3769F14C26B98F410006EAAC /* Sources */,
 				3769F14D26B98F410006EAAC /* Frameworks */,
 				3769F14E26B98F410006EAAC /* Resources */,
+				FE3B90C3CF9D62592C057532 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,13 +178,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B599B5292B14033F2D6BBCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrudishCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3B90C3CF9D62592C057532 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrudishCamera/Pods-PrudishCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3769F14C26B98F410006EAAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7865042E26CBA54A0068FDA7 /* AnchorLayer.swift in Sources */,
-				7865043126CBB6C10068FDA7 /* FaceHandler.swift in Sources */,
 				3769F15426B98F410006EAAC /* AppDelegate.swift in Sources */,
 				37852ACB26BADE0B0003F9D1 /* CameraViewController.swift in Sources */,
 				3769F16C26B993BB0006EAAC /* CameraSetting.swift in Sources */,
@@ -311,6 +375,7 @@
 		};
 		3769F16526B98F430006EAAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A3443CD338744131D9FF49 /* Pods-PrudishCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +403,7 @@
 		};
 		3769F16626B98F430006EAAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE94E1E95624E880C90C48A /* Pods-PrudishCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
